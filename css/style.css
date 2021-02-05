@@ -51,5 +51,16 @@ ul{
     top:20px;
     right: 40px;
     border-radius: 20px;
+    color: black;
+    transition-property: all;
+    transition-duration: 1s;
+
+}
+
+.btn-primary:hover{
+    
+    border: 2px solid #D41B2D;
+    background-color: #D41B2D;
+    color:white;
 
 }

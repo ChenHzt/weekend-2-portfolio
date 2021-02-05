@@ -23,16 +23,18 @@ nav ul li{
 nav ul li a{
     /* opacity: 0; */
     padding: 15px;
+    padding-top: 20px;
     display: block;
     position: relative;
     /* border: 1px solid black; */
     color: white;
     /* z-index: 5; */
+    width:70px;
     
 }
 
 nav ul li a::before{
-    content:"";
+    content:attr(data-nav-item);
     position: absolute;
     top:0;
     left:0;
@@ -40,7 +42,8 @@ nav ul li a::before{
     height: 100%;
     opacity: 0;
     background-color: #D41B2D;
-    
+    display: flex;
+    align-items: center;
     border: none;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
