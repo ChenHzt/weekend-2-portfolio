@@ -1,0 +1,78 @@
+.home-page .side-image {
+  flex: 1;
+  background: url("../img/11111222.png") no-repeat center center/contain;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  animation: slide-in 800ms ease-in 0s 1 forwards ;
+  
+}
+
+
+@keyframes slide-in{
+    from{
+        transform: translateX(-20px);
+        opacity: 0;
+
+    }
+
+    to{
+        transform: translateX(0);
+        opacity: 1;
+        
+    }
+}
+
+.home-page .headline {
+  display: flex;
+  flex-direction: column;
+
+  z-index: 10;
+  font-family: "Prompt", sans-serif;
+  font-weight: 300;
+  color: #090A3B;
+
+}
+
+.home-page .headline p{
+    font-size: 24px;
+    font-weight: bold;
+}
+.home-page .headline h1 {
+  font-family: "Chonburi", cursive;
+
+  font-size: 5rem;
+  margin: 0;
+  
+}
+
+.home-page .side-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 40px 0;
+  font-family: "Prompt", sans-serif;
+  font-size: 24px;
+  animation: slide-in 800ms ease-in 0s 1 forwards ;
+}
+
+
+.home-page .side-info .contact-block {
+    color: #090A3B;
+    width: 100%;
+    height: max-content;
+}
+
+.home-page .side-info .contact-block a{
+    color: #090A3B ;
+    font-size: 2rem;
+}
+
+.home-page .side-info .contact-block a:visited{
+    color: #090A3B;
+}
+
+
+
