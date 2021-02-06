@@ -64,6 +64,7 @@
   font-family: "Prompt", sans-serif;
   font-weight: bold;
   color: #090a3b;
+  padding: 10px 0;
 }
 
 .skills-page .another-skills ul li .another-skills-info {
@@ -74,6 +75,8 @@
   margin-top: 10px;
   flex: 2;
 }
+
+
 .skills-page .another-skills img {
   height: 4em;
   width: 4em;
@@ -187,28 +190,35 @@
 }
 
 @media (max-width:768px){
+  .page{
+    height: max-content;
+  }
   .skills-page .page-container {
     flex-direction: column;
     padding:0;
-    font-size: 0.7em;
+    /* font-size: 0.7em; */
   }
 
-  .skills-page .another-skills{
+  .skills-page .another-skills
+  {
+    
     width: 100%;
     margin:  20px;
-    max-height: 40%;
+    height: 80vh;
+    /* max-height: 40%; */
   }
 
   .skills-page .another-skills ul {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    /* margin: 10px; */
+    margin: 10px;
   }
 
   .skills-page .another-skills ul li {
     flex-direction: row;
     border-radius: 10px;
     justify-content: space-around;
+    margin: 10px
     /* padding: 5px; */
   }
 
@@ -217,15 +227,46 @@
   }
   .skills-page .another-skills ul li div{
     flex:2;
+    margin: 0 5px;
   }
 
   .skills-page .skills {
     padding: 0 10px;
     margin: 0;
+    /* height: 80vh; */
   }
 
   .skills-page .skills ul li{
-    margin: 2px;
+    margin: 10px;
+  }
+}
+
+@media(max-width:500px){
+  .skills-page .another-skills
+  {
+    
+    width: 100%;
+    margin:  20px;
+    height: 80vh;
+    /* max-height: 40%; */
+  }
+
+  .skills-page .another-skills ul {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    /* margin: 10px; */
+  }
+
+  .skills-page .another-skills ul li {
+    flex-direction: row;
+    border-radius: 10px;
+    justify-content: space-around;
+    background-color: #fff;
+    box-shadow: none;
+    border-bottom: #e1e9fe 2px solid;
+    border-radius: 0px;
+    margin:10px 30px;
+    /* padding: 10px; */
   }
 }
 
