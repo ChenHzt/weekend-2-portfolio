@@ -5,9 +5,14 @@
 }
 
 #contact-page > h2{
-    padding:20px;
-    font-size: 2.5rem;
-    text-align: center;
+    margin: auto;
+    margin-top: 3rem;
+
+    /* flex: 1; */
+    font-family: "Chonburi", cursive;
+    letter-spacing: 2px;
+      font-size: 3.5rem;
+      font-weight: bold;
 }
 #contact-page .page-container{
     display: flex;
@@ -83,6 +88,8 @@
 #contact-page .page-container .contact-links{
     flex:1;
     height: 100%;
+    /* background-color: cyan; */
+    /* border-left: darkblue solid 2px; */
 }
 
 #contact-page .page-container .contact-links .contact-links-container{

@@ -56,3 +56,9 @@ nav ul a:hover::before {
     opacity:1;
     width: 100%;
 }
+
+@media(max-width:768px){
+    nav{
+        display: none;
+    }
+}

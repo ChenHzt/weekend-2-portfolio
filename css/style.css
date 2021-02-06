@@ -22,6 +22,7 @@
     height: 100vh;
     display: flex;
     z-index: -100;
+    overflow: hidden;
     /* background-color: #B7E1F7; */
 }
 
