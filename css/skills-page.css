@@ -15,12 +15,13 @@
   flex: 1;
   font-family: "Chonburi", cursive;
   letter-spacing: 2px;
-    font-size: 3.5em;
+    font-size: 3.5em; 
     font-weight: bold;
+    min-height: 3rem;
 }
 
 .skills-page .page-container {
-    flex: 10;
+    /* flex: 3; */
   /* background-color: burlywood; */
   display: flex;
   flex-direction: row;
@@ -195,6 +196,7 @@
   .skills-page .another-skills{
     width: 100%;
     margin:  20px;
+    max-height: 40%;
   }
 
   .skills-page .another-skills ul {
@@ -207,7 +209,7 @@
     flex-direction: row;
     border-radius: 10px;
     justify-content: space-around;
-    padding: 5px;
+    /* padding: 5px; */
   }
 
   .skills-page .another-skills ul li img{
@@ -224,5 +226,17 @@
 
   .skills-page .skills ul li{
     margin: 2px;
+  }
+}
+
+@media(max-height:500px){
+  .skills-page h2 {
+    margin-top: 0px;
+  }
+
+  .skills-page .page-container{
+    padding: 0;
+    margin: 10px;
+    max-height: 80%;
   }
 }
