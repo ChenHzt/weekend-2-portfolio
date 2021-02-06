@@ -1,14 +1,17 @@
 .home-page .side-image {
-  flex: 1;
+  flex:2;
+  /* background: url("../img/software-language-programmer-avatar-vector-17866169.jpg") no-repeat center center/contain; */
+  /* background-color:palegoldenrod; */
+  animation: slide-in 800ms ease-in 0s 1 forwards ;
+  height: 100%;
+  width: 100%;
+}
+
+.home-page .side-image .image{
   background: url("../img/software-language-programmer-avatar-vector-17866169.jpg") no-repeat center center/contain;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
-  animation: slide-in 800ms ease-in 0s 1 forwards ;
-  
 }
-
 
 @keyframes slide-in{
     from{
@@ -52,10 +55,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 40px 0;
+  /* padding: 40px 0; */
   font-family: "Prompt", sans-serif;
   font-size: 24px;
   animation: slide-in 800ms ease-in 0s 1 forwards ;
+  /* background-color: palegreen; */
 }
 
 
@@ -74,5 +78,19 @@
     color: #090A3B;
 }
 
+@media(max-width:768px){
+    .home-page .page-container{
+      flex-direction: column;
+      align-items: center;
+    }
 
+    .side-info{
+      text-align: center;
+    }
+
+    .home-page .headline h1{
+      font-size: 3rem;
+    }
+    
+}
 
